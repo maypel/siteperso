@@ -1,12 +1,15 @@
 
- section1{ 
+section1
+{ 
     color: rgb(236, 227, 227);
     font-family: arial;
     margin: 0;
     padding: 0;
     min-height: 100vh;
  }
-
+p {
+    color: black
+}
  li { 
     display: inline-block;
     margin-right: .25rem;
@@ -22,28 +25,29 @@ a:visited {
 
 article{
     color: black;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center center;
-    flex-grow: 1;
-    flex-direction: column;
     display: flex;
-    justify-content: flex-end;
-    text-align: left;
+    flex-grow: 1;
+    flex-direction:row;
+    justify-content:center;
+    text-align: center;
    
 }
 
 .petit_text {
-    height: 5px;
-    font-size: 15px;
+    height: 0.313em;
+    font-size: 1em;
     background-color: skyblue;
     border-left: 5px #187498 solid;
     border-radius: 10px;
-    padding: 15px;
+    padding: 1em;
     box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.5);
 }
 
 footer{
+    position: absolute;
+    bottom: 0;
+}
+footer.bottom-position{
     background: linear-gradient(90deg, #8360c3, #2ebf91);
     color: #ffffff;
     display: flex;
@@ -71,4 +75,5 @@ body{
     margin: 5;
     padding: 0;
     min-height: 100vh;
+    position: relative;
  }
